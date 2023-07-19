@@ -13,6 +13,10 @@
   "author": "David Fox",
   "license": "MIT",
   "dependencies": {
+    "boxicons": "^2.1.4",
     "express": "^4.18.2"
   }
+  
 }
+
+

@@ -1,0 +1,333 @@
+$primary: rgb(255, 255, 255);
+$secondary: rgb(160, 176, 255);
+$tertiary: rgb(139, 214, 255);
+$quaternary: rgb(0, 0, 53);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: $quaternary;
+    color: $primary;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 35px;
+    color: $primary;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow:0px 0px 2px $tertiary;
+    opacity: 0.8;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: $primary;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px $primary;
+    opacity: 0.8;
+    margin-left: 30px;
+    transition: transform .2s ease-in-out;
+}
+
+.navbar a:hover {
+    text-shadow: 1px 1px 5px $primary;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.navbar a:active {
+    color: $quaternary;
+}
+
+.home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10% 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1{
+    margin-bottom: 4%;
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    color: $primary;
+    line-height: 1.2;
+    text-shadow:0px 0px 2px $tertiary;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: $secondary;
+    text-shadow:0px 0px 3px $primary;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1.5s ease forwards;
+    animation-delay: 1.6s;
+    z-index: 2;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    //background-color: $secondary;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+.btn-box a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 150px;
+    height: 100%;
+    background: $tertiary;
+    border: 2px solid $tertiary;
+    border-radius: 8px;
+    font-size: 20px;
+    color: $quaternary;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+    text-shadow:0px 0px 3px $primary;
+}
+
+.btn-box a:hover {
+    color: $tertiary;
+}
+
+.btn-box :nth-child(2) {
+    background: transparent;
+    color: $tertiary;
+}
+
+.btn-box :nth-child(2):hover {
+    color: $quaternary;
+}
+
+.btn-box :nth-child(2)::before {
+    background: $tertiary;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $quaternary;
+    z-index: -1;
+    transition: .4s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    //border-radius: 1px solid white;
+    display: flex;
+    justify-content: left;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: showRight 1.2s ease forwards;
+    animation-delay: 3s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid $tertiary;
+    border-radius: 50%;
+    color: $tertiary;
+    text-decoration: none;
+    margin: 3px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.home-sci a:hover {
+    color: $quaternary;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 100%;
+    background: $tertiary;   
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    background-image: url('/img/imageedit_1_5993541409.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    opacity: .5;
+    right: 30px;
+    width: 40%;
+    margin-top: 4%;
+    margin-right: 4%;
+    height: 100%;
+    //background: transparent;
+    //border: 2px solid red;
+    transition: 2.5s;
+
+}
+
+.home-imgHover:hover {
+    opacity: 1.1;
+
+}
+
+.home-imgHover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $quaternary;
+    animation: fadeIn 3s ease forwards;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+//Keyframes animation//
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 0;
+    }
+}
