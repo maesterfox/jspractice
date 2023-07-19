@@ -128,6 +128,7 @@ header {
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
+    z-index: 5;
 }
 
 .home-content p::before {
@@ -248,8 +249,8 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: 2px solid $tertiary;
     border-radius: 50%;
@@ -282,26 +283,29 @@ header {
 }
 
 .home-imgHover {
+    display: flex;
+    flex-wrap: wrap;
     background-image: url('/img/imageedit_1_5993541409.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: absolute;
     top: 0;
-    opacity: .5;
-    right: 30px;
-    width: 40%;
-    margin-top: 4%;
-    margin-right: 4%;
+    opacity: .4;
+    //right:;
+    width: 100%;
+    margin: auto;
     height: 100%;
     //background: transparent;
-    //border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow:0px 5px 10px $primary, 5px 10px 15px $primary;
+
     transition: 2.5s;
 
 }
 
 .home-imgHover:hover {
-    opacity: 1.1;
+    opacity: 0.9;
 
 }
 
