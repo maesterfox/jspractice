@@ -2,21 +2,20 @@ $primary: rgb(255, 255, 255);
 $secondary: rgb(160, 176, 255);
 $tertiary: rgb(139, 214, 255);
 $quaternary: rgb(0, 0, 53);
-
+$shade: grey;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: $quaternary;
-    color: $primary;
-}
+  background: $quaternary;
+  color: $primary;
 
-header {
+  header {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,289 +26,286 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
 
-.logo {
-    position: relative;
-    font-size: 35px;
-    color: $primary;
-    text-decoration: none;
-    font-weight: 600;
-    text-shadow:0px 0px 2px $tertiary;
-    opacity: 0.8;
-}
+    .logo {
+      position: relative;
+      font-size: 35px;
+      color: $primary;
+      text-decoration: none;
+      font-weight: 600;
+      text-shadow: 0px 0px 2px $tertiary;
+      opacity: 0.8;
 
-.logo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $quaternary;
+        animation: showRight 1s ease forwards;
+        animation-delay: 0.4s;
+      }
+    }
 
-.navbar a {
-    font-size: 25px;
-    color: $primary;
-    text-decoration: none;
-    text-shadow: 0px 0px 2px $primary;
-    opacity: 0.8;
-    margin-left: 30px;
-    transition: transform .2s ease-in-out;
-}
+    .navbar {
+      a {
+        font-size: 25px;
+        color: $primary;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px $primary;
+        opacity: 0.8;
+        margin-left: 30px;
+        transition: transform 0.2s ease-in-out;
 
-.navbar a:hover {
-    text-shadow: 1px 1px 5px $primary;
-    transform: scale(1.1);
-    opacity: 1;
-}
+        &:hover {
+          text-shadow: 1px 1px 5px $primary;
+          transform: scale(1.1);
+          opacity: 1;
+        }
 
-.navbar a:active {
-    color: $quaternary;
+        &:active {
+          color: $quaternary;
+        }
+      }
+    }
+  }
 }
 
 .home {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    padding: 10% 10%;
-}
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10% 10%;
 
-.home-content {
+  .home-content {
     max-width: 600px;
-}
 
-.home-content h1{
-    margin-bottom: 4%;
-    position: relative;
-    font-size: 56px;
-    font-weight: 700;
-    color: $primary;
-    line-height: 1.2;
-    text-shadow:0px 0px 2px $tertiary;
-}
+    h1 {
+      margin-bottom: 4%;
+      position: relative;
+      font-size: 56px;
+      font-weight: 700;
+      color: $primary;
+      line-height: 1.2;
+      text-shadow: 0px 0px 2px $tertiary;
 
-.home-content h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $quaternary;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+      }
+    }
 
-.home h3 {
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: $secondary;
-    text-shadow:0px 0px 3px $primary;
-}
+    h3 {
+      position: relative;
+      font-size: 32px;
+      font-weight: 700;
+      color: $secondary;
 
-.home-content h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.4s;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $quaternary;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.4s;
+      }
+    }
 
-.home-content p{
-    position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-    z-index: 5;
-}
+    p {
+      position: relative;
+      font-size: 16px;
+      margin: 20px 0 40px;
+      z-index: 5;
 
-.home-content p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1.5s ease forwards;
-    animation-delay: 1.6s;
-    z-index: 2;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $quaternary;
+        animation: showRight 1.5s ease forwards;
+        animation-delay: 1.6s;
+        z-index: 2;
+      }
+    }
 
-.home-content .btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-    //background-color: $secondary;
-}
+    .btn-box {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 345px;
+      height: 50px;
+      //background-color: $secondary;
 
-.home-content .btn-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2s;
-    z-index: 2;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $quaternary;
+        animation: showRight 1s ease forwards;
+        animation-delay: 2s;
+        z-index: 2;
+      }
 
-.btn-box a {
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    width: 150px;
-    height: 100%;
-    background: $tertiary;
-    border: 2px solid $tertiary;
-    border-radius: 8px;
-    font-size: 20px;
-    color: $quaternary;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: .5px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .4s;
-    text-shadow:0px 0px 3px $primary;
-}
+      a {
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 150px;
+        height: 100%;
+        background: $tertiary;
+        border: 2px solid $tertiary;
+        border-radius: 8px;
+        font-size: 20px;
+        color: $quaternary;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.4s;
+        text-shadow: 0px 0px 3px $primary;
 
-.btn-box a:hover {
-    color: $tertiary;
-}
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: $quaternary;
+          z-index: -1;
+          transition: 0.4s;
+        }
 
-.btn-box :nth-child(2) {
-    background: transparent;
-    color: $tertiary;
-}
+        &:hover {
+          color: $tertiary;
 
-.btn-box :nth-child(2):hover {
-    color: $quaternary;
-}
+          &::before {
+            width: 100%;
+          }
+        }
+      }
 
-.btn-box :nth-child(2)::before {
-    background: $tertiary;
-}
+      :nth-child(2) {
+        background: transparent;
+        color: $tertiary;
 
-.btn-box a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: $quaternary;
-    z-index: -1;
-    transition: .4s;
-}
+        &:hover {
+          color: $quaternary;
+        }
 
-.btn-box a:hover::before {
-    width: 100%;
+        &::before {
+          background: $tertiary;
+        }
+      }
+    }
+  }
 
-}
-
-.home-sci {
+  .home-sci {
     position: absolute;
     bottom: 40px;
     width: 100%;
     //border-radius: 1px solid white;
     display: flex;
     justify-content: left;
-}
 
-.home-sci::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $quaternary;
-    animation: showRight 1.2s ease forwards;
-    animation-delay: 3s;
-    z-index: 2;
-}
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $quaternary;
+      animation: showRight 1.2s ease forwards;
+      animation-delay: 3s;
+      z-index: 2;
+    }
 
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid $tertiary;
-    border-radius: 50%;
-    color: $tertiary;
-    text-decoration: none;
-    margin: 3px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .4s;
-}
+    a {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: 2px solid $tertiary;
+      border-radius: 50%;
+      color: $tertiary;
+      text-decoration: none;
+      margin: 3px;
+      z-index: 1;
+      overflow: hidden;
+      transition: 0.4s;
 
-.home-sci a:hover {
-    color: $quaternary;
-}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: $tertiary;
+        z-index: -1;
+        transition: 0.5s;
+      }
 
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0; 
-    height: 100%;
-    background: $tertiary;   
-    z-index: -1;
-    transition: .5s;
-}
+      &:hover {
+        color: $quaternary;
 
-.home-sci a:hover::before {
-    width: 100%;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .home-imgHover {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url('/img/imageedit_1_5993541409.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    opacity: .4;
-    //right:;
-    width: 100%;
-    margin: auto;
-    height: 100%;
-    //background: transparent;
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow:0px 5px 10px $primary, 5px 10px 15px $primary;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('/img/imageedit_1_5993541409.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  //right:;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  //background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px $primary, 5px 10px 15px $primary;
+  transition: 2.5s;
 
-    transition: 2.5s;
-
-}
-
-.home-imgHover:hover {
+  &:hover {
     opacity: 0.9;
+  }
 
-}
-
-.home-imgHover::before {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -320,18 +316,19 @@ header {
     animation: fadeIn 3s ease forwards;
     animation-delay: 2s;
     z-index: 2;
+  }
 }
 
 //Keyframes animation//
 
 @keyframes showRight {
-    100% {
-        width: 0;
-    }
+  100% {
+    width: 0;
+  }
 }
 
 @keyframes fadeIn {
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
